@@ -7,6 +7,10 @@ fun main(){
         println("Second Largest Number: \$secondLargest")
         println(myPalindrome("madam"))
         println(myPalindrome("naserian"))
+
+
+        val myClock=Clock(10,30,20)
+        myClock.show()
     }
     //Write a function that takes an array of numbers as input and returns the sum of all the numbers
     fun addition (numbers: Array<Int>): Int{
@@ -54,4 +58,15 @@ fun main(){
             return  "not palindrome"
         }
     }
+
+
+
+data class Clock(var hour: Int,var minute: Int,var seconds:Int) {
+    fun show() = println("Time:$hour:$minute:$seconds")
+}
+fun display(Time: Int){
+    if(Time<=60){
+        println("")
+    }
+}
 
